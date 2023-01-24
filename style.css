@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dcdde1;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase ;
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#jogador{
+    position: relative;
+    flex-grow: 1;
+    background-color: rgba(226, 130, 130, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#jogador-nome, #computador-nome {
+    font-size: 24px;
+}
+
+#computador-nome {
+    text-align: right;
+}
+
+#jogador-pontos, #computador-pontos{
+    font-size: 52px;
+    position: absolute;
+    top: 8px;
+}
+
+#jogador-pontos {
+    right: 20px;
+}
+
+ ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+ ul li a {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#jogador-escolha li a:hover, #jogador-escolha li a.selecionado, #computador #computador-escolha a.selecionado {
+    opacity: 1;
+}
+
+ ul li a img {
+    max-width: 125px;
+}
+
+#versus {
+    font-size: 60px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+#computador {
+    position: relative;
+    flex-grow: 1;
+    background-color: rgba(138, 153, 238, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#mensagem{
+    background-color: #9b59b6;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 20px;
+}
